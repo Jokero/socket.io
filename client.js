@@ -1,7 +1,6 @@
-const url = new URL(document.URL);
-const params = new URLSearchParams(url.search.slice(1));
+const urlParams = new URLSearchParams(location.search.slice(1));
 
-const chatPort = params.get('chatPort') || 3000;
+const chatPort = urlParams.get('chatPort') || 3000;
 const accessToken = '123'; // or use cookie for the same domain
 
 const ioConfig = {
@@ -30,7 +29,7 @@ function subscribe() {
     });
 
     // what if we have multiple channels?
-    subscriptions.on('update', response => {
+    subscriptions.on('subscription', response => {
         console.log('trends data', response.data);
     });
 }
