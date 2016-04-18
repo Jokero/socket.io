@@ -8,11 +8,6 @@
         "email": "gk.joker@gmail.com"
     },
 
-    "repository": {
-        "type": "git",
-        "url":  "https://github.com/Jokero/websockets.git"
-    },
-
     "license": "MIT",
 
     "engines": {
