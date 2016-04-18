@@ -14,10 +14,15 @@
         "node": ">=4.0.0"
     },
 
-    "devDependencies": {
+    "scripts": {
+        "start": "node subscriptions -p 4000 & node chat -p 3000 & node chat -p 3001 & http-server -s -p 9999"
+    },
+
+    "dependencies": {
         "ws": "1.0.1",
         "socket.io": "1.4.5",
         "socket.io-redis": "1.0.0",
-        "minimist": "1.2.0"
+        "minimist": "1.2.0",
+        "http-server": "0.9.0"
     }
 }
