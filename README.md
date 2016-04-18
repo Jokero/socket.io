@@ -4,19 +4,15 @@
 npm start
 ```
 
-Open page http://localhost:9999
+Now you have three app servers:
+1) One for subscription demonstration (port 4000)
+2) Two others for chat (ports 3000 and 3001). Instances are connected using socket.io redis adapter (pub/sub)
 
-You can use following commands in browser console
+Subscription test:
+1) Open http://localhost:9999
+2) Type `subscribe()` in console. It's connection to "campaignTrends" channel (campaignId is 123456). You will periodically receive some data.
+3) To unsubscribe execute `unsubscribe()`
 
-for subscriptions:
-
-```js
-subscribe()
-unsubscribe()
-```
-
-and for chat:
-
-```js
-message('Hi all!')
-```
+Chat test:
+1) Open http://localhost:9999 to connect to first app server and http://localhost:9999?chatPort=3001 to connect to second chat server.
+2) Type `message('some text')`, each client should receive your message although they are connected to different servers
