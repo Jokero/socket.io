@@ -1,5 +1,5 @@
 {
-    "name":    "websockets",
+    "name":    "socket.io",
     "version": "0.0.1",
     "private": true,
 
@@ -19,7 +19,6 @@
     },
 
     "dependencies": {
-        "ws": "1.0.1",
         "socket.io": "1.4.5",
         "socket.io-redis": "1.0.0",
         "minimist": "1.2.0",

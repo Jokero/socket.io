@@ -1,6 +1,6 @@
-# websockets
+# socket.io
 
-[Socket.io overview](docs/socket.io.md)
+[Socket.io overview](docs/overview.md)
 
 ```sh
 npm start
