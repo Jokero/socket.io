@@ -4,7 +4,7 @@ There are several popular and mantainable modules for nodejs:
 * https://github.com/sockjs/sockjs-node
 * https://github.com/socketio/socket.io
 
-First three is just implementation of WebSocket protocol (sockjs additionally supports other transports as fallback), while socket.io is a library for building realtime applications. It enables event-based communication, offers multiple transports for reliability, works on multiple application instances and has concept of namespaces and rooms for grouping of sockets.
+First three are just implementation of WebSocket protocol (sockjs additionally supports other transports as fallback), while socket.io is a library for building realtime applications. It enables event-based communication, offers multiple transports for reliability, works on multiple application instances and has concept of namespaces and rooms for grouping of sockets.
 
 Namespaces is a useful feature to minimize the number of TCP connections and at the same time separate concerns within your application by introducing separation between communication channels. When a namespace emits an event, all sockets connected to the namespace receive it. When you create socket it joins to specified namespace. All sockets are connected also to global namespace "/". Namespaces should be predefined in server code.
 
