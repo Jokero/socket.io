@@ -10,9 +10,9 @@ Now you have three app servers:
 
 Subscription test:  
 1) Open `http://localhost:9999`  
-2) Type `subscribe()` in console. It's connection to "campaignTrends" channel (campaignId is 123456). You will periodically receive some data.  
+2) Type `subscribe()` in console. You will connect to "campaignTrends" channel with campaignId=123456
 3) To unsubscribe execute `unsubscribe()`
 
 Chat test:  
 1) Open `http://localhost:9999` to connect to first app server and `http://localhost:9999?chatPort=3001` to connect to second chat server.  
-2) Type `message('some text')`, each client should receive your message although they are connected to different servers
+2) Type `message('some text')`, each client will receive your message although they are connected to different servers
