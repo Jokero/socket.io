@@ -3,6 +3,7 @@
 [Socket.io overview](docs/overview.md)
 
 ```sh
+npm i
 npm start
 ```
 
